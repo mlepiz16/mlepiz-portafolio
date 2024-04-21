@@ -1,14 +1,15 @@
 /*CSS Reset / Normalize*/
+
+@import url("reset.css");
+
 /* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
 en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
-coloque nas sessões indicadas*/
 
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+   --cor-de-link: #464646;
 }
 
 body {
@@ -16,11 +17,13 @@ body {
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
     margin: 0;
-    padding: 0;
+    padding: 0 32px;
     line-height: 1;
+    overflow-x: hidden;
 }
 ol, ul,li {
     list-style: none;
+    /*text-align: center;*/
 }
 a{
     text-decoration: none;
@@ -42,13 +45,30 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.menu__header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu__header img{
+    height: 24px;
+}
+
+.menu__list{
+    display: none;
 }
 
 /*Sección Title*/
 
 section.title{
-
+    
 }
 
 /*Sección About*/
@@ -95,6 +115,9 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 768px) {
 
 /* Menú */
+.menu__list{
+    display: none;
+}
 
 /*title*/
 
@@ -108,10 +131,30 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
+/*Desktop*/
+@media (min-width: 1024px) {
 
 /*Menu*/
+
+body{
+    padding: 0 100px;
+}
+
+section.menu{
+    height: 88px;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.menu__list__item__contacto{
+    display: none;
+}
+
+
 
 /*Titulo*/
 
