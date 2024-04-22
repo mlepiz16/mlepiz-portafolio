@@ -1,6 +1,8 @@
 /*CSS Reset / Normalize*/
 
-@import url("reset.css");
+@import url("/styles/reset.css");
+@import url("/styles/menu.css");
+@import url("/styles/title.css");
 
 /* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
 en las secciones señaladas */
@@ -15,15 +17,16 @@ en las secciones señaladas */
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
+    
     font-family: 'Raleway';
     margin: 0;
-    padding: 0 32px;
+    padding: 0 16px;
     line-height: 1;
     overflow-x: hidden;
 }
 ol, ul,li {
     list-style: none;
-    /*text-align: center;*/
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -44,69 +47,13 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.menu__header{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.menu__header img{
-    height: 24px;
-}
-
-.menu__list{
-    display: none;
-}
 
 /*Sección Title*/
 
-section.title{
-    
-}
 
-.title__bio{
-    font-size: 22px;
-    font-weight: bold;
-}
 
-.title__subsection{
-    font-size: 14px;
-    font-weight: normal;
-}
 
-.title__div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.title__profile{
-    width: 68px;
-}
-
-.title__container{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    
-    
-}
-
-.title__network{
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.
 
 
 
@@ -153,6 +100,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Tablet*/
 @media (min-width: 768px) {
+
+body{
+    padding: 0 32px;
+}
 
 /* Menú */
 .menu__list{

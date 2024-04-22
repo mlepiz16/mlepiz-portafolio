@@ -1,0 +1,22 @@
+section.menu{
+    
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu__header img{
+    height: 24px;
+}
+
+.menu__list{
+    display: none;
+}
