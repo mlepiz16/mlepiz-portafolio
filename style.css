@@ -71,6 +71,46 @@ section.title{
     
 }
 
+.title__bio{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.title__subsection{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.title__div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.title__profile{
+    width: 68px;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    
+}
+
+.title__network{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.
+
+
+
+
 /*Sección About*/
 
 section.about{
@@ -121,6 +161,26 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*title*/
 
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.title__profile{
+    width: 146px;
+}
+
+   
+
+.title__network{
+    font-size: 14px;
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
 /*Skills*/
 
 /*Hobbies*/
@@ -131,13 +191,17 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 }
 
+
+
+
+
 /*Desktop*/
 @media (min-width: 1024px) {
 
 /*Menu*/
 
 body{
-    padding: 0 100px;
+    padding: 0 80px;
 }
 
 section.menu{
@@ -154,9 +218,34 @@ section.menu{
     display: none;
 }
 
-
-
 /*Titulo*/
+
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.title__profile{
+    width: 368px;
+}
+
+.title__bio{
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.title__subsection{
+    font-size: 22px;
+}
+
+.title__network{
+    font-size: 14px;
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-start;
+    gap: 32px;
+}
 
 /*Sección sobre mi*/
 
