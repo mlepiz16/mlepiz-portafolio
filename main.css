@@ -5,6 +5,7 @@
 @import url("/styles/title.css");
 @import url("/styles/about.css");
 @import url("/styles/skills.css");
+@import url("/styles/hobbies.css");
 
 /* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
 en las secciones señaladas */
@@ -51,14 +52,9 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Title*/
 /*Sección About*/
 /*Sección Skills*/
-
-
-
 /*Sección Hobbies*/
 
-section.hobbies{
-    
-}
+
 
 /* Experiencia Académica*/
 
@@ -139,6 +135,22 @@ body{
 }
 
 /*Hobbies*/
+
+.hobbies__line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    gap: 16px;   
+}
+
+.hobbies__box{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+    height: 118px;
+    flex-basis: 218px;    
+}
 
 /*Formación Académica*/
 
@@ -224,7 +236,23 @@ section.menu{
 }
 
 /*Hobbies*/
- 
+
+.hobbies__line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    gap: 16px;   
+}
+
+.hobbies__box{
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+    height: 173px;
+    flex-basis: 170px;     
+}
+
 /*Formación Académica*/
 
 /*Experiencia Profesional*/
